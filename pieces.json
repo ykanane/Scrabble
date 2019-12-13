@@ -1,0 +1,31 @@
+
+ {pieces{ [
+ 	{"letter":"A", "value":1,  "amount":9, "image" : "images/letter/Tile_A.jpg"},
+ 	{"letter":"B", "value":3,  "amount":2, "image" : "images/letter/Tile_B.jpg"},
+ 	{"letter":"C", "value":3,  "amount":2, "image" : "images/letter/Tile_C.jpg"},
+ 	{"letter":"D", "value":2,  "amount":4, "image" : "images/letter/Tile_D.jpg"},
+ 	{"letter":"E", "value":1,  "amount":12, "image" : "images/letter/Tile_E.jpg"},
+ 	{"letter":"F", "value":4,  "amount":2, "image" : "images/letter/Tile_F.jpg"},
+ 	{"letter":"G", "value":2,  "amount":3, "image" : "images/letter/Tile_G.jpg"},
+ 	{"letter":"H", "value":4,  "amount":2, "image" : "images/letter/Tile_H.jpg"},
+ 	{"letter":"I", "value":1,  "amount":9, "image" : "images/letter/Tile_I.jpg"},
+ 	{"letter":"J", "value":8,  "amount":1, "image" : "images/letter/Tile_J.jpg"},
+ 	{"letter":"K", "value":5,  "amount":1, "image" : "images/letter/Tile_K.jpg"},
+ 	{"letter":"L", "value":1,  "amount":4, "image" : "images/letter/Tile_L.jpg"},
+ 	{"letter":"M", "value":3,  "amount":2, "image" : "images/letter/Tile_M.jpg"},
+ 	{"letter":"N", "value":1,  "amount":6, "image" : "images/letter/Tile_N.jpg"},
+ 	{"letter":"O", "value":1,  "amount":8, "image" : "images/letter/Tile_O.jpg"},
+ 	{"letter":"P", "value":3,  "amount":2, "image" : "images/letter/Tile_P.jpg"},
+ 	{"letter":"Q", "value":10, "amount":1, "image" : "images/letter/Tile_Q.jpg"},
+ 	{"letter":"R", "value":1,  "amount":6, "image" : "images/letter/Tile_R.jpg"},
+ 	{"letter":"S", "value":1,  "amount":4, "image" : "images/letter/Tile_S.jpg"},
+ 	{"letter":"T", "value":1,  "amount":6, "image" : "images/letter/Tile_T.jpg"},
+ 	{"letter":"U", "value":1,  "amount":4, "image" : "images/letter/Tile_U.jpg"},
+ 	{"letter":"V", "value":4,  "amount":2, "image" : "images/letter/Tile_V.jpg"},
+ 	{"letter":"W", "value":4,  "amount":2, "image" : "images/letter/Tile_W.jpg"},
+ 	{"letter":"X", "value":8,  "amount":1, "image" : "images/letter/Tile_X.jpg"},
+ 	{"letter":"Y", "value":4,  "amount":2, "image" : "images/letter/Tile_Y.jpg"},
+ 	{"letter":"Z", "value":10, "amount":1, "image" : "images/letter/Tile_Z.jpg"},
+ 	{"letter":"Blank", "value":0,  "amount":2, "image" : "images/letter/Tile_Blank.jpg"}
+ ]
+ }

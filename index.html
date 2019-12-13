@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+ File: HW6/index.html
+ Full name: Yassir Kanane
+ COMP 4601 Assignment 7
+ Yassir Kanane, UMass Lowell Computer Science, yassir_kanane@student.uml.edu
+ Updated on Dec. 1, 2019 at 3:47 PM
+ This is a dynamic Multiplication table web app
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Multiplication Table</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link href="css/style.css" type="text/css"
+        rel="stylesheet" />
+    </head>
+
+    <body>
+
+      <div id="container">
+        <div id="snaptarget" class="ui-widget-header">
+           <p>I'm a snap target</p>
+       </div>
+      <ul>
+          <li id="draggable" class="ui-state-highlight">Drag me down</li>
+      </ul>
+
+      <div id="tileRack" class="ui-widget-header">
+            <img src="images/letter/Tile_A.jpg" id="draggable2" class="drag-class"></img>
+            <img src="images/letter/Tile_B.jpg" id="draggable3" class="drag-class"></img>
+      </div>
+
+
+      <div id="tileBoard">
+          <div id="cardSlots">
+              <div id="slot-1" class="dropLoc" ></div>
+              <div id="slot-2" class="dropLoc" ></div>
+              <div id="slot-3" class="dropLoc" ></div>
+              <div id="slot-4" class="dropLoc" ></div>
+              <div id="slot-5" class="dropLoc" ></div>
+              <div id="slot-6" class="dropLoc" ></div>
+              <div id="slot-7" class="dropLoc" ></div>
+              <div id="slot-8" class="dropLoc" ></div>
+              <div id="slot-9" class="dropLoc" ></div>
+              <div id="slot-10" class="dropLoc" ></div>
+              <div id="slot-11" class="dropLoc" ></div>
+              <div id="slot-12" class="dropLoc" ></div>
+              <div id="slot-13" class="dropLoc" ></div>
+              <div id="slot-14" class="dropLoc" ></div>
+              <div id="slot-15" class="dropLoc" ></div>
+          </div>
+      </div>
+
+    </div>
+       <!-- scripts for jquery and javascript functionally-->
+  		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  				integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  				crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+          crossorigin="anonymous"></script>
+      <script src="js/add-content.js"></script>
+
+   </body>
+</html>

@@ -1,0 +1,34 @@
+/*
+ File: HW6/css/styles.css
+ Full name: Yassir Kanane
+ COMP 4601 Assignment 7
+ Yassir Kanane, UMass Lowell Computer Science, yassir_kanane@student.uml.edu
+ Updated on Nov. 26, 2019 at 3:47 PM */
+
+
+#innerRack{
+  margin: auto auto;
+}
+ #tileRack {
+   background: url("../images/Tile_Rack.png");
+   margin: auto;
+   height: 230px;
+   background-repeat: no-repeat;
+   width: 650px;
+   border: none;
+   text-align: center;
+   display: table-cell;
+   vertical-align: middle;
+ }
+
+ #slot-1 {
+   background: url("../images/tiles/double_letter.png");
+   width: 80px;
+   height: 80px;
+ }
+
+
+ #draggable2, #draggable3 {
+   height:50px;
+   width: 50px;
+ }
