@@ -1,34 +1,173 @@
 /*
- File: HW6/css/styles.css
+ File: HW9/css/styles.css
  Full name: Yassir Kanane
- COMP 4601 Assignment 7
+ COMP 4601 Assignment 9
  Yassir Kanane, UMass Lowell Computer Science, yassir_kanane@student.uml.edu
- Updated on Nov. 26, 2019 at 3:47 PM */
+ Updated on Dec. 20, 2019 at 3:47 PM */
 
+#container{
+   color: black;
+   background-color: lightgreen;
+   border-radius: 20px;
+   height: 600px;
+   width:1200px;
+   margin: auto;
+ }
 
-#innerRack{
-  margin: auto auto;
+#header{
+   text-align: center;
+   font: italic 250% fantasy;
+   border: 10px dotted #1F6AB6;
+   border-radius: 5px;
+ }
+
+body{
+  background-color: #1F6AB6;
 }
- #tileRack {
+
+/*Style and center the buttons*/
+#game-buttons{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*style button text and border*/
+#reset-tile, #next-word, #new-game, #refill-pool {
+  border-radius: 5px;
+  font: italic 120% fantasy;
+}
+
+/*Style and center the score board and everything in it*/
+#scoreBoard{
+  display: flex;
+  justify-content: center;
+  font: italic 100% fantasy;
+  color: black;
+}
+
+/*center score board content*/
+#score, #total-score, #tiles-remaining, #current-word{
+  justify-content: center;
+  text-align: center;
+}
+
+/*Add shadow to tile board and center content*/
+#tileBoard {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  box-shadow: 2px 2px 25px green;
+}
+
+/*class to use for higlighting board when we hover, idea from yongcho's game posted in the piazza */
+#tileBoard .ui-droppable-hover {
+   box-shadow: 1px 1px 25px blue;
+}
+
+/*center rack contents and custom dismensions*/
+#innerRack{
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  padding-top: 60px;
+  height: 60px;
+  margin-bottom: 40px;
+
+}
+
+/*This next section sets the proper background for the tile rack and specific
+board tiles and modifies their dimensions to make them look nice*/
+#tileRack {
    background: url("../images/Tile_Rack.png");
    margin: auto;
    height: 230px;
    background-repeat: no-repeat;
    width: 650px;
-   border: none;
-   text-align: center;
-   display: table-cell;
-   vertical-align: middle;
+   margin-top: 20px;
+   justify-content: center;
  }
 
- #slot-1 {
+.doubleLetter {
+   display: inline-block;
    background: url("../images/tiles/double_letter.png");
    width: 80px;
-   height: 80px;
+   height: 85px;
+   background-repeat: no-repeat;
+}
+
+.boardTile {
+   display: inline-block;
+   background: url("../images/tiles/blank.png");
+   width: 80px;
+   height: 85px;
+   background-repeat: no-repeat;
  }
 
+.doubleWord {
+ display: inline-block;
+ background: url("../images/tiles/double_word.png");
+ width: 80px;
+ height: 85px;
+ background-repeat: no-repeat;
+}
 
- #draggable2, #draggable3 {
-   height:50px;
-   width: 50px;
- }
+/*Set size for letter tiles in blank letter dialog options*/
+.blankTileLetters {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/*to get rid of close button text, from jquery dialog api*/
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+ /* This is just for the error message when the user tries to place a tile in an
+ occupied board spot. I got this from the following source:
+ https://www.w3schools.com/howto/howto_js_snackbar.asp*/
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

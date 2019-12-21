@@ -1,5 +1,5 @@
 
- {"pieces" : [
+ {pieces{ [
  	{"letter":"A", "value":1,  "amount":9, "image" : "images/letter/Tile_A.jpg"},
  	{"letter":"B", "value":3,  "amount":2, "image" : "images/letter/Tile_B.jpg"},
  	{"letter":"C", "value":3,  "amount":2, "image" : "images/letter/Tile_C.jpg"},
