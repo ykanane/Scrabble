@@ -1,11 +1,9 @@
 /*
- File: HW6/js/add-content.js
+ File: Scrabble/js/add-content.js
  Full name: Yassir Kanane
  COMP 4601 Assignment 9
  Yassir Kanane, UMass Lowell Computer Science, yassir_kanane@student.uml.edu
  Updated on Dec. 20, 2019 at 3:47 PM */
-
-
 
  $(function() {
      var tilePool = [];
@@ -17,14 +15,13 @@
      var doubleWordFlag = false;
      var currentScore = 0;
      var totalScore = 0;
-
+     
+     //Ajax to get json containing info about tiles and their distribution
      $.get("https://ykanane.github.io/Scrabble/pieces.json")
      .done(function(response) {
        tileJSON = response.pieces;
        initializeGame();
-       console.log(currentRack);
      });
-
 
      //Learned about droppable options from this: https://api.jqueryui.com/droppable/#option-tolerance
      $("#innerRack").droppable({
